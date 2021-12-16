@@ -1,16 +1,16 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        12/16/2021  16:10:57  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        12/16/2021  16:31:08  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\multiplication.obj TO .\Objects\githubprogram PRINT (.\Listings\githubprogram.m51)
->>  RAMSIZE (256)
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\div.obj TO .\Objects\githubprogram PRINT (.\Listings\githubprogram.m51) RAMSIZE (2
+>> 56)
 
 
 INPUT MODULES INCLUDED:
-  .\Objects\multiplication.obj (MULTIPLICATION)
+  .\Objects\div.obj (DIV)
 
 
-LINK MAP OF MODULE:  .\Objects\githubprogram (MULTIPLICATION)
+LINK MAP OF MODULE:  .\Objects\githubprogram (DIV)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -20,25 +20,24 @@ LINK MAP OF MODULE:  .\Objects\githubprogram (MULTIPLICATION)
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
-            CODE    0000H     0006H     ABSOLUTE     
+            CODE    0000H     0005H     ABSOLUTE     
 
 
 
-SYMBOL TABLE OF MODULE:  .\Objects\githubprogram (MULTIPLICATION)
+SYMBOL TABLE OF MODULE:  .\Objects\githubprogram (DIV)
 
   VALUE           TYPE          NAME
   ----------------------------------
 
-  -------         MODULE        MULTIPLICATION
-  D:00F0H         SYMBOL        B
+  -------         MODULE        DIV
   C:0000H         LINE#         2
   C:0002H         LINE#         3
-  C:0005H         LINE#         4
-  -------         ENDMOD        MULTIPLICATION
+  C:0004H         LINE#         4
+  -------         ENDMOD        DIV
 
 ******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0006H BYTE ( 0%) *
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0005H BYTE ( 0%) *
 ******************************************************************************
 
-Program Size: data=8.0 xdata=0 code=6
+Program Size: data=8.0 xdata=0 code=5
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

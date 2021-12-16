@@ -1,0 +1,29 @@
+A51 MACRO ASSEMBLER  SUB                                                                  12/16/2021 16:21:09 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02c
+OBJECT MODULE PLACED IN .\Objects\sub.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 7-Subtraction\sub.asm SET(SMALL) DEBUG PRINT(.\Listings\sub.lst) OBJECT
+                      (.\Objects\sub.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 7906              2             MOV R1,#06H
+0002 7407              3             MOV A,#07H
+0004 99                4             SUBB A,R1
+                       5             END
+A51 MACRO ASSEMBLER  SUB                                                                  12/16/2021 16:21:09 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
