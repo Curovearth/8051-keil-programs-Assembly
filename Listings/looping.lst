@@ -1,0 +1,33 @@
+A51 MACRO ASSEMBLER  LOOPING                                                              12/16/2021 20:26:25 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02c
+OBJECT MODULE PLACED IN .\Objects\looping.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 10-Jump Loop and Call Instructions\looping.asm SET(SMALL) DEBUG PRINT(.
+                      \Listings\looping.lst) OBJECT(.\Objects\looping.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;This program adds value 3 to the ACC ten times
+                       2     
+0000 7400              3                     MOV A,#0                ;A=0 clear ACC
+0002 7A0A              4                     MOV R2,#10              ;load counter R2=10
+0004 2403              5     AGAIN:  ADD A,#03               ;add 03 to ACC
+0006 DAFC              6                     DJNZ R2,AGAIN   ;repeat untill R2=0, 10 times
+0008 FD                7                     MOV R5,A                ;save A in R5
+*** WARNING #A41 IN 7 (10-Jump Loop and Call Instructions\looping.asm, LINE 7): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  LOOPING                                                              12/16/2021 20:26:25 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0004H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)
