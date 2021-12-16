@@ -1,0 +1,29 @@
+A51 MACRO ASSEMBLER  3_DIRECTAM                                                           12/16/2021 15:40:56 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02c
+OBJECT MODULE PLACED IN .\Objects\3-DirectAM.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 3-Direct AM\3-DirectAM.asm SET(SMALL) DEBUG PRINT(.\Listings\3-DirectAM
+                      .lst) OBJECT(.\Objects\3-DirectAM.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 750701            1     MOV 07H,#01H    ;move the value 01H to location 07H
+0003 7408              2     MOV A,#08H              ;move the value 08h to the accumulator
+0005 2507              3     ADD A,07H               ;add the value stored in 07h with accumulator and store the result 
+                             in accumulator
+*** WARNING #A41 IN 3 (3-Direct AM\3-DirectAM.asm, LINE 3): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  3_DIRECTAM                                                           12/16/2021 15:40:56 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

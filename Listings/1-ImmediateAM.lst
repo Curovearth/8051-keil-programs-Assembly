@@ -1,0 +1,30 @@
+A51 MACRO ASSEMBLER  1_IMMEDIATEAM                                                        12/16/2021 15:22:04 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02c
+OBJECT MODULE PLACED IN .\Objects\1-ImmediateAM.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 1-Immediate AM\1-ImmediateAM.asm SET(SMALL) DEBUG PRINT(.\Listings\1-Im
+                      mediateAM.lst) OBJECT(.\Objects\1-ImmediateAM.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7420              1     MOV A, #20h     
+0002 780F              2     MOV R0,#15         
+0004 758007            3     MOV P0, #07h      
+0007 752005            4     MOV 20h,#05h     
+*** WARNING #A41 IN 4 (1-Immediate AM\1-ImmediateAM.asm, LINE 4): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  1_IMMEDIATEAM                                                        12/16/2021 15:22:04 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+P0 . . . . . . . .  D ADDR   0080H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

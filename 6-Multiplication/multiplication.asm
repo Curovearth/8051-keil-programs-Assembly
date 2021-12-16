@@ -1,0 +1,5 @@
+
+	MOV A,#03H
+	MOV B,#06H
+	MUL AB
+	END

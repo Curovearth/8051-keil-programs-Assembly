@@ -1,0 +1,28 @@
+A51 MACRO ASSEMBLER  4_INDIRECT_AM                                                        12/16/2021 15:49:32 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02c
+OBJECT MODULE PLACED IN .\Objects\4-Indirect AM.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 4-Indirect AM\4-Indirect AM.asm SET(SMALL) DEBUG PRINT(.\Listings\4-Ind
+                      irect AM.lst) OBJECT(.\Objects\4-Indirect AM.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7801              1     MOV R0,#01H             ;01 value is stored in R0
+0002 7908              2     MOV R1,#08H             ;08 value is stored in R1
+0004 8720              3     MOV 20h,@R1             ;copy the content of the address in R1 to the 20h register
+*** WARNING #A41 IN 3 (4-Indirect AM\4-Indirect AM.asm, LINE 3): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  4_INDIRECT_AM                                                        12/16/2021 15:49:32 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

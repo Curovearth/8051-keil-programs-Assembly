@@ -1,0 +1,3 @@
+".\Objects\multiplication.obj" 
+TO ".\Objects\githubprogram" 
+PRINT(".\Listings\githubprogram.m51") RAMSIZE(256) 

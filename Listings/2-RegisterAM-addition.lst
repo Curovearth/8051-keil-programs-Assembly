@@ -1,0 +1,28 @@
+A51 MACRO ASSEMBLER  2_REGISTERAM_ADDITION                                                12/16/2021 15:37:25 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02c
+OBJECT MODULE PLACED IN .\Objects\2-RegisterAM-addition.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 2-Register AM\2-RegisterAM-addition.asm SET(SMALL) DEBUG PRINT(.\Listin
+                      gs\2-RegisterAM-addition.lst) OBJECT(.\Objects\2-RegisterAM-addition.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7902              1     MOV R1,#02H             ;Move the value 02 to R1
+0002 7430              2     MOV A,#30H              ;Move the value 30H to Accumulator
+0004 29                3     ADD A,R1                ;Add A and R1 and store the result in A
+                       4     END
+A51 MACRO ASSEMBLER  2_REGISTERAM_ADDITION                                                12/16/2021 15:37:25 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
