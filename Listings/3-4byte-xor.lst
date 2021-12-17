@@ -1,0 +1,47 @@
+A51 MACRO ASSEMBLER  3_4BYTE_XOR                                                          12/17/2021 23:35:14 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02c
+OBJECT MODULE PLACED IN .\Objects\3-4byte-xor.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 12-Logic Operations\3-4byte-xor.asm SET(SMALL) DEBUG PRINT(.\Listings\3
+                      -4byte-xor.lst) OBJECT(.\Objects\3-4byte-xor.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7A40              1     mov r2,#40h ; copy address location 40 into r2 
+0002 7B50              2     mov r3,#50h ; copy address location 50 into r3 
+0004 7C60              3     mov r4,#60h ; copy address location 60 into r4->result location 
+0006 7F04              4     mov r7,#04h ; r7 acting as a counter 
+0008 EA                5     L1:      mov a,r2 
+0009 F8                6                      mov r0,a ; copy the data from r2 to r0(address of the first data) 
+000A E6                7                      mov a,@r0 ; copy the data from address location stored r0 register 
+000B F8                8                      mov r0,a 
+000C EB                9                      mov a,r3 
+000D F9               10                      mov r1,a 
+000E E7               11                      mov a,@r1 
+000F 68               12                      XRL a,r0 
+0010 F8               13                      mov r0,a 
+0011 EC               14                      mov a,r4 
+0012 F9               15                      mov r1,a 
+0013 E8               16                      mov a,r0 
+0014 F7               17                      mov @r1,a 
+0015 0A               18                      inc r2 
+0016 0B               19                      inc r3 
+0017 0C               20                      inc r4 
+0018 DFEE             21                      djnz r7, L1 
+                      22     end
+A51 MACRO ASSEMBLER  3_4BYTE_XOR                                                          12/17/2021 23:35:14 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+L1 . . . . . . . .  C ADDR   0008H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

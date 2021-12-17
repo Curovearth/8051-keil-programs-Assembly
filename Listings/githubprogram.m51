@@ -1,16 +1,16 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        12/17/2021  22:16:32  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        12/17/2021  23:35:14  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\2-4byte-or.obj TO .\Objects\githubprogram PRINT (.\Listings\githubprogram.m51) RAM
->> SIZE (256)
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\3-4byte-xor.obj TO .\Objects\githubprogram PRINT (.\Listings\githubprogram.m51) RA
+>> MSIZE (256)
 
 
 INPUT MODULES INCLUDED:
-  .\Objects\2-4byte-or.obj (2_4BYTE_OR)
+  .\Objects\3-4byte-xor.obj (3_4BYTE_XOR)
 
 
-LINK MAP OF MODULE:  .\Objects\githubprogram (2_4BYTE_OR)
+LINK MAP OF MODULE:  .\Objects\githubprogram (3_4BYTE_XOR)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -24,12 +24,12 @@ LINK MAP OF MODULE:  .\Objects\githubprogram (2_4BYTE_OR)
 
 
 
-SYMBOL TABLE OF MODULE:  .\Objects\githubprogram (2_4BYTE_OR)
+SYMBOL TABLE OF MODULE:  .\Objects\githubprogram (3_4BYTE_XOR)
 
   VALUE           TYPE          NAME
   ----------------------------------
 
-  -------         MODULE        2_4BYTE_OR
+  -------         MODULE        3_4BYTE_XOR
   C:0008H         SYMBOL        L1
   C:0000H         LINE#         65533
   C:0002H         LINE#         2
@@ -52,14 +52,14 @@ SYMBOL TABLE OF MODULE:  .\Objects\githubprogram (2_4BYTE_OR)
   C:0016H         LINE#         19
   C:0017H         LINE#         20
   C:0018H         LINE#         21
-  -------         ENDMOD        2_4BYTE_OR
+  -------         ENDMOD        3_4BYTE_XOR
 
 ******************************************************************************
 * RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 001AH BYTE ( 1%) *
 ******************************************************************************
 
 Program Size: data=8.0 xdata=0 code=26
-BL51 BANKED LINKER/LOCATER V6.22                                                      12/17/2021  22:16:32  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/17/2021  23:35:14  PAGE 2
 
 
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
