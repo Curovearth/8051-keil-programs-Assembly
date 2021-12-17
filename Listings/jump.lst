@@ -1,0 +1,43 @@
+A51 MACRO ASSEMBLER  JUMP                                                                 12/16/2021 22:21:23 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02c
+OBJECT MODULE PLACED IN .\Objects\jump.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 10-Jump Loop and Call Instructions\jump.asm SET(SMALL) DEBUG PRINT(.\Li
+                      stings\jump.lst) OBJECT(.\Objects\jump.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Find the sum of the values 79H, F5H, E2H. Put the sum in registers R0(low byte) and R5(hig
+                             h byte)
+                       2     
+0000 7400              3                     MOV A,#0                ;A=0
+0002 FD                4                     MOV R5,A                ;clear R5
+0003 2479              5                     ADD A,#79H              ;A=0+79H
+0005 5001              6                     JNC N_1                 ;if CY=0, add next number
+0007 0D                7                     INC R5                  ;if CY=1, increment R5
+0008 24F5              8     N_1:    ADD A,#0F5H             ;A=79+F5=6E and CY=1
+000A 5001              9                     JNC N_2                 ;jump if CY=0
+000C 0D               10                     INC R5                  ;if CY=1, increment R5
+000D 24E2             11     N_2:    ADD A,#0E2H             ;A=6E+E2=50 and CY=1
+000F 5001             12                     JNC OVER                ;jump if CY=0
+0011 0D               13                     INC R5                  ;if CY=1, increment 5
+0012 F8               14     OVER:   MOV R0,A                ;now R0=50H and R5=02
+*** WARNING #A41 IN 14 (10-Jump Loop and Call Instructions\jump.asm, LINE 14): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  JUMP                                                                 12/16/2021 22:21:23 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+N_1. . . . . . . .  C ADDR   0008H   A   
+N_2. . . . . . . .  C ADDR   000DH   A   
+OVER . . . . . . .  C ADDR   0012H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

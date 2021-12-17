@@ -1,16 +1,16 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        12/16/2021  20:26:25  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        12/17/2021  22:16:32  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\looping.obj TO .\Objects\githubprogram PRINT (.\Listings\githubprogram.m51) RAMSIZ
->> E (256)
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\2-4byte-or.obj TO .\Objects\githubprogram PRINT (.\Listings\githubprogram.m51) RAM
+>> SIZE (256)
 
 
 INPUT MODULES INCLUDED:
-  .\Objects\looping.obj (LOOPING)
+  .\Objects\2-4byte-or.obj (2_4BYTE_OR)
 
 
-LINK MAP OF MODULE:  .\Objects\githubprogram (LOOPING)
+LINK MAP OF MODULE:  .\Objects\githubprogram (2_4BYTE_OR)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -20,27 +20,46 @@ LINK MAP OF MODULE:  .\Objects\githubprogram (LOOPING)
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
-            CODE    0000H     0009H     ABSOLUTE     
+            CODE    0000H     001AH     ABSOLUTE     
 
 
 
-SYMBOL TABLE OF MODULE:  .\Objects\githubprogram (LOOPING)
+SYMBOL TABLE OF MODULE:  .\Objects\githubprogram (2_4BYTE_OR)
 
   VALUE           TYPE          NAME
   ----------------------------------
 
-  -------         MODULE        LOOPING
-  C:0004H         SYMBOL        AGAIN
-  C:0000H         LINE#         3
-  C:0002H         LINE#         4
-  C:0004H         LINE#         5
-  C:0006H         LINE#         6
-  C:0008H         LINE#         7
-  -------         ENDMOD        LOOPING
+  -------         MODULE        2_4BYTE_OR
+  C:0008H         SYMBOL        L1
+  C:0000H         LINE#         65533
+  C:0002H         LINE#         2
+  C:0004H         LINE#         3
+  C:0006H         LINE#         4
+  C:0008H         LINE#         5
+  C:0009H         LINE#         6
+  C:000AH         LINE#         7
+  C:000BH         LINE#         8
+  C:000CH         LINE#         9
+  C:000DH         LINE#         10
+  C:000EH         LINE#         11
+  C:000FH         LINE#         12
+  C:0010H         LINE#         13
+  C:0011H         LINE#         14
+  C:0012H         LINE#         15
+  C:0013H         LINE#         16
+  C:0014H         LINE#         17
+  C:0015H         LINE#         18
+  C:0016H         LINE#         19
+  C:0017H         LINE#         20
+  C:0018H         LINE#         21
+  -------         ENDMOD        2_4BYTE_OR
 
 ******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0009H BYTE ( 0%) *
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 001AH BYTE ( 1%) *
 ******************************************************************************
 
-Program Size: data=8.0 xdata=0 code=9
+Program Size: data=8.0 xdata=0 code=26
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/17/2021  22:16:32  PAGE 2
+
+
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

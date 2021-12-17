@@ -1,0 +1,38 @@
+A51 MACRO ASSEMBLER  NESTEDLOOP                                                           12/16/2021 20:51:03 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02c
+OBJECT MODULE PLACED IN .\Objects\nestedloop.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 10-Jump Loop and Call Instructions\nestedloop.asm SET(SMALL) DEBUG PRIN
+                      T(.\Listings\nestedloop.lst) OBJECT(.\Objects\nestedloop.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;if we want to repeat an action more times than 256, we use a loop inside a loop which is c
+                             alled nested Loop
+                       2     ;write a program to (a)load the accumulator with the value 55h and (b)complement the ACC 70
+                             0 times
+                       3     
+0000 7455              4                     MOV A,#55H              ;A=55h
+0002 7B0A              5                     MOV R3,#10              ;R3=10, Outer loop count
+0004 7A46              6     NEXT:   MOV R2,#70              ;R2=70, inner loop count
+0006 F4                7     AGAIN:  CPL A                   ;complement A register
+0007 DAFD              8                     DJNZ R2,AGAIN   ;repeat it 70 times
+0009 DBF9              9                     DJNZ R3,NEXT
+*** WARNING #A41 IN 9 (10-Jump Loop and Call Instructions\nestedloop.asm, LINE 9): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  NESTEDLOOP                                                           12/16/2021 20:51:03 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0006H   A   
+NEXT . . . . . . .  C ADDR   0004H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

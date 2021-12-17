@@ -1,0 +1,52 @@
+A51 MACRO ASSEMBLER  1_4BYTE_AND                                                          12/17/2021 21:27:29 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02c
+OBJECT MODULE PLACED IN .\Objects\1-4byte-and.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 12-Logic Operations\1-4byte-and.asm SET(SMALL) DEBUG PRINT(.\Listings\1
+                      -4byte-and.lst) OBJECT(.\Objects\1-4byte-and.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; 4byte 
+0000 7A40              2     mov r2,#40h                     ; copy address location 40 into r2 
+0002 7B50              3     mov r3,#50h                     ; copy address location 50 into r3 
+0004 7C60              4     mov r4,#60h                     ; copy address location 60 into r4->result location 
+0006 7F04              5     mov r7,#04h                     ; r7 acting as a counter 
+                       6     
+0008 EA                7     L1:     mov a,r2 
+0009 F8                8                     mov r0,a                ; copy the data from r2 to r0(address of the first 
+                             data)
+000A EB                9                     mov a,r3 
+000B F9               10                     mov r1,a 
+                      11                     ;mov r1,r3              ; copy the data from r3 to r1(address of the second
+                              data) 
+000C E6               12                     mov a,@r0               ; copy the data from address location stored r0 reg
+                             ister
+000D 57               13                     anl a,@r1               ; AND the data where the address location stored in
+                              r1 with acc 
+000E 8CF0             14                     mov b,r4                ; copy the data from r4 to r1(the address of the re
+                             sult)
+0010 A9F0             15                     mov r1,b                ; result stored in result location
+0012 F7               16                     mov @r1,a 
+0013 0A               17                     inc r2 
+0014 0B               18                     inc r3 
+0015 0C               19                     inc r4 
+0016 DFF0             20                     djnz r7, L1 
+                      21     end 
+A51 MACRO ASSEMBLER  1_4BYTE_AND                                                          12/17/2021 21:27:29 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+L1 . . . . . . . .  C ADDR   0008H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,32 @@
+A51 MACRO ASSEMBLER  INTERNAL_RAM_TO_EXTERNAL_RAM                                         12/17/2021 21:23:49 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02c
+OBJECT MODULE PLACED IN .\Objects\internal-ram-to-external-ram.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 11-Data Transfer\internal-ram-to-external-ram.asm SET(SMALL) DEBUG PRIN
+                      T(.\Listings\internal-ram-to-external-ram.lst) OBJECT(.\Objects\internal-ram-to-external-ram.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7840              1     mov r0, #40h            ;The ram address 40h is copy into the r0 register 
+0002 7960              2     mov r1, #60h            ; The ram address 60h is copied into the r1 register 
+0004 7665              3     mov @r0, #65h           ; The direct data 65h is copied into the address location of 40h  
+0006 E6                4     mov a,@r0                       ; The value stored in the address location 40h is copied to
+                              A register  
+0007 F7                5     mov @r1,a                       ;The value of A register is copied into RAM address locatio
+                             n of 60h 
+                       6     end 
+A51 MACRO ASSEMBLER  INTERNAL_RAM_TO_EXTERNAL_RAM                                         12/17/2021 21:23:49 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
