@@ -5,7 +5,7 @@
 <p>Various Assembly language programs for 8051 microcontrollers done using Keil Software.</p><br>
 
 <div>
-  <h2>Steps for Keil Software</h2> 
+  <h2>Steps for Keil Software -> Total 9 steps</h2> 
   <h3 align=center>STEP 1: (When the software is opened)</h3>
   <img width=600 src="https://github.com/Swarzinium-369/8051-keil-programs-Assembly/blob/main/img/1-greet.png"/>
   
