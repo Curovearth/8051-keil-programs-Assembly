@@ -7,31 +7,31 @@
 <div>
   <h2>Steps for Keil Software -> Total 9 steps</h2> 
   <h3 align=center>STEP 1: (When the software is opened)</h3>
-  <img width=600 src="https://github.com/Swarzinium-369/8051-keil-programs-Assembly/blob/main/img/1-greet.png"/>
+  <img width=600 src="https://github.com/curovearth/8051-keil-programs-Assembly/blob/main/img/1-greet.png"/>
   
   <h3 align=center>STEP 2: (Making a new project to work on)</h3>
-  <img width=600 src="https://github.com/Swarzinium-369/8051-keil-programs-Assembly/blob/main/img/2-new%20project.png"/>
+  <img width=600 src="https://github.com/curovearth/8051-keil-programs-Assembly/blob/main/img/2-new%20project.png"/>
   
   <h3 align=center>STEP 3: (Saving with default project extension)</h3>
-  <img width=600 src="https://github.com/Swarzinium-369/8051-keil-programs-Assembly/blob/main/img/3-save.png"/>
+  <img width=600 src="https://github.com/curovearth/8051-keil-programs-Assembly/blob/main/img/3-save.png"/>
   
   <h3 align=center>STEP 4: (Selecting the right device)</h3>
-  <img width=600 src="https://github.com/Swarzinium-369/8051-keil-programs-Assembly/blob/main/img/4-legacy%20option.png"/>
+  <img width=600 src="https://github.com/curovearth/8051-keil-programs-Assembly/blob/main/img/4-legacy%20option.png"/>
   
   <h3 align=center>STEP 5: (Selecting the right microcontroller device)</h3>
-  <img width=600 src="https://github.com/Swarzinium-369/8051-keil-programs-Assembly/blob/main/img/5-p89v51rd2.png"/>
+  <img width=600 src="https://github.com/curovearth/8051-keil-programs-Assembly/blob/main/img/5-p89v51rd2.png"/>
   
   <h3 align=center>STEP 6: (Adding a new text file -> Red dot i.e Top Left)</h3>
-  <img width=600 src="https://github.com/Swarzinium-369/8051-keil-programs-Assembly/blob/main/img/6-new%20text%20file.png"/>
+  <img width=600 src="https://github.com/curovearth/8051-keil-programs-Assembly/blob/main/img/6-new%20text%20file.png"/>
   
   <h3 align=center>STEP 7: (Saving the text file with .asm)</h3>
-  <img width=600 src="https://github.com/Swarzinium-369/8051-keil-programs-Assembly/blob/main/img/7-save%20as%20asm.png"/>
+  <img width=600 src="https://github.com/curovearth/8051-keil-programs-Assembly/blob/main/img/7-save%20as%20asm.png"/>
   
   <h3 align=center>STEP 8: (Adding the existing file that we did above)</h3>
-  <img width=600 src="https://github.com/Swarzinium-369/8051-keil-programs-Assembly/blob/main/img/8-add%20exisiting%20file.png"/>
+  <img width=600 src="https://github.com/curovearth/8051-keil-programs-Assembly/blob/main/img/8-add%20exisiting%20file.png"/>
   
   <h3 align=center>STEP 9: (Finally add the text file with .asm)</h3>
-  <img width=600 src="https://github.com/Swarzinium-369/8051-keil-programs-Assembly/blob/main/img/9-add%20file.png"/>
+  <img width=600 src="https://github.com/curovearth/8051-keil-programs-Assembly/blob/main/img/9-add%20file.png"/>
 </div><br>
 
 <h2>Helpful Resources</h2>
